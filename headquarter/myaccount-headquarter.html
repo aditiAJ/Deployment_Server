@@ -37,21 +37,20 @@ margin-right: 5%;
             
             <!-- <img src="sites/all/themes/civildefence/images/indian-embelam.png" title="Government of India" alt="Indian Embelam" /> -->
             <div class="logo" id="logo-1">
-                <img src="photo-gallery/indian-embelam.png" width="30" height="50" >
+               </div>
             
-                </div>
+            <div class="col-md-7 inline-block" title="HOMEGUARDS">
             
-            <div class="col-7 inline-block" title="HOMEGUARDS">
                 
-             <p>RAJASTHAN HOMEGUARDS</p>
+             <p>
+                <img src="photo-gallery/homeguard.jpg" width="70" height="70" >
+                 
+                RAJASTHAN HOMEGUARDS</p>
              
              
              </div>
-             <div class="col-1" id="logo-1">
-                <img src="photo-gallery/homeguard.jpg" width="70" height="70">
-                <!-- <button class="button button1">DISTRICT</button> -->
-            </div>
-            <div class="col-2">
+             
+            <div class="col-md-2">
                 <div class="my-3" >
                 Date:- 
                 <span id="date">
@@ -68,16 +67,19 @@ margin-right: 5%;
         <!-- <img src="photo-gallery/homeguard.jpg"  width="50" height="50"> -->
         
         <div class="collapse navbar-collapse mx-5" id="navbarNav" >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" style="margin-left: 11%;">
             <li class="nav-item active">
-              <a class="nav-link mx-5" href="./main.html" style="font-size: large;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link mx-5" href="./home-headquarter.html" style="font-size: large; text-rendering: geometricPrecision;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-5" href="./about.html" style="font-size: large;">About Us</a>
+              <a class="nav-link mx-5" href="./aboutus-headquarter.html" style="font-size: large;">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-5" href="./account.html" style="font-size: large;">My Account</a>
+              <a class="nav-link mx-5" href="./myaccount-headquarter.html" style="font-size: large;">My Account</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link mx-5" href="./notification-headquarter.html" style="font-size: large;">Notifications</a>
+              </li>
           </ul>
         </div>
         <div class="collapse navbar-collapse" id="navcol-1">
@@ -87,7 +89,7 @@ margin-right: 5%;
                 User Name
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./login.html">Sign Out</a>
+                <a class="dropdown-item" href="../main.html">Sign Out</a>
                 
               </div>
             </li>
@@ -137,9 +139,50 @@ margin-right: 5%;
         </div>
             <div class="col-sm">
               
-                <button type="submit4" class="btn btn-primary mb-2" style="padding: 6%;" >Add Deployement Center</button> 
-                <button type="submit5" class="btn btn-primary mb-2" style="padding: 6%;">update Deployement Center</button> 
-                <button type="submit6" class="btn btn-primary mb-2"style="padding: 6%;">Delete Deployement Center</button> 
+                <!-- update credentials -->
+                <button type="button" class="btn btn-primary mb-2" style="padding: 6%;" data-toggle="modal" data-target="#myModal">Update Credentials</button>
+
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+    
+                    <div class="modal-content">
+                      <div class="modal-header">
+                         <h4 class="modal-title">Update Credentials</h4>
+                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="office-address">Office Address</label>
+                            <input type="text" class="form-control" id="office-address" aria-describedby="emailHelp">
+                          </div>
+                          <div class="form-group">
+                            <label for="count">Total Count of Volunteers</label>
+                            <input type="text" class="form-control" id="count">
+                          </div>
+                          <div class="form-group">
+                            <label for="managed-by">Managed By</label>
+                            <input type="text" class="form-control" id="managed-by">
+                          </div>
+                          <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="text" class="form-control" id="contact">
+                          </div>
+                          <div class="form-group">
+                            <label for="designation">Designation</label>
+                            <input type="text" class="form-control" id="designation">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                       </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
             </div>
         
     </div>
@@ -175,12 +218,13 @@ margin-right: 5%;
             
     
     </div>
+    
 </form>
 </div>
 
     <footer class="footer mt-auto py-3">
         <div class="container">
-          <span class="text-white">Place sticky footer content here.</span>
+          <span class="text-white">&copy;Copyright, Rajasthan Home Guards Department</span>
         </div>
     </footer>
     
